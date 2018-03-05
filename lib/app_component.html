@@ -1,6 +1,7 @@
 <h1>{{title}}</h1>
 
 <h2>My Heroes</h2>
+<div *ngIf="heroes == null">Loading...</div>
 <ul class="heroes">
     <li *ngFor="let hero of heroes"
         [class.selected]="hero === selectedHero"
